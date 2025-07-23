@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ProductCard from './productCard'
 import { useEffect, useState } from 'react'
+import ProductCard from './productcard'
 
 const Products = () => {
     const [products, setProducts] = useState([])
@@ -13,7 +13,7 @@ const Products = () => {
   return (
     <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4'>
       {products.map(product =>(
-        <productCard key={product.id}product={product}/>
+        <ProductCard key={product.id}product={product}/>
     ))}
     </div>
   )
