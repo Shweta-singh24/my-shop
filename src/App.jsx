@@ -3,8 +3,8 @@ import {BrowserRouter, Routes, Route, link} from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Whistlist from './components/Whistlist'
 import Products from './components/Products'
-import Home from './components/Home'
 import Layout from './components/Layout'
+import Navbar from './components/Navbar'
 
   const router = createBrowserRouter([
     {
@@ -12,8 +12,8 @@ import Layout from './components/Layout'
       element:<Layout/>
     },
     {
-      path: "/home",
-      element: <Home/>
+      path: "#",
+      element: <Navbar/>
     },
     {
       path: "/whistlist",

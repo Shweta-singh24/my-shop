@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-const Home = () => {
+import FlipkartExplore from './Flipkart-explore-plus.png'
+
+
+const Home = ({product}) => {
   return (
-    <div className='bg-yellow-200 text-white'>
-      home
+    <div >
     </div>
   )
 }
