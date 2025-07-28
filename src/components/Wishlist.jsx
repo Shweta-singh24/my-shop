@@ -1,23 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Products from './Products'
 
 
 
-const Whistlist = ({whistlist}) => {
-  console.log(whistlist)
+
+const Wishlist = ({wishlist}) => {
+  
   
   
   return (
   <>
-  {whistlist.length === 0 ? (
+  {wishlist.length === 0 ? (
     <p> noooooooooooo</p>
   ):(
-    whistlist.map(() => (
+    wishlist.map(() => (
       <div key={Products.id}>{Products.title}</div>
     ))
   )}
   </>
   )
   }
-export default Whistlist;
+export default Wishlist;

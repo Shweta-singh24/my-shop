@@ -1,37 +1,37 @@
-import {BrowserRouter, Routes, Route, link} from 'react'
+import { BrowserRouter, Routes, Route, link } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Whistlist from './components/Whistlist'
-import Products from './components/Products'
+import Wishlist from './components/Wishlist'
+import Cart from './components/Cart'
 import Layout from './components/Layout'
 import Navbar from './components/Navbar'
 import { useState } from 'react'
 
 function App() {
-    const [whistlist, setWhistlist] = useState([])
-    
-      
+  const [whistlist, setWhistlist] = useState([])
+
+
   const router = createBrowserRouter([
     {
       path: "/",
-      element:<Layout/>
+      element: <Layout />
     },
     {
       path: "#",
-      element: <Navbar/>
+      element: <Navbar />
     },
     {
-      path: "/whistlist",
-      element:<Whistlist whistlist={Whistlist}/>
+      path: "/Wishlist",
+      element: <Wishlist/>
     },
     {
-      path:"/products",
-      element:<Products Products={Products} whistlist={whistlist} setWhistlist={setWhistlist}/>
+      path: "/Cart",
+      element: <Cart/>
     }
   ])
 
   return (
     <>
-    <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </>
   )
 }
