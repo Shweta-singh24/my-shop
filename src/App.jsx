@@ -4,12 +4,10 @@ import Wishlist from './components/Wishlist'
 import Cart from './components/Cart'
 import Layout from './components/Layout'
 import Navbar from './components/Navbar'
-import { useState } from 'react'
+
 
 function App() {
-  const [whistlist, setWhistlist] = useState([])
-
-
+  
   const router = createBrowserRouter([
     {
       path: "/",
